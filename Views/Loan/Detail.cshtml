@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "상세항목";
+}
+
+<h1>신청 상세항목</h1>
+<table class="table table-bordered">
+    <tr>
+        <th>신청번호</th>
+        <td>@Model.No</td>
+    </tr>
+    <tr>
+        <th>금액</th>
+        <td>@Model.Cost</td>
+    </tr>
+    <tr>
+        <th>계좌번호</th>
+        <td>@Model.AccountNo</td>
+    </tr>
+    <tr>
+        <th>은행</th>
+        <td>@Model.Bank</td>
+    </tr>
+    <tr>
+        <th>신청일</th>
+        <td>@Model.LoanDate</td>
+    </tr>
+    <tr>
+        <th>상환일</th>
+        <td>@Model.RepaymentDate</td>
+    </tr>
+    <tr>
+        <th>신청자</th>
+        <td>@Model.UserName</td>
+    </tr>
+</table>
+
+<button class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">삭제</button>
+
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">경고</h4>
+            </div>
+            <div class="modal-body">
+                <p>삭제하시겠습니까?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
+                <a class="btn btn-danger" asp-controller="Loan" asp-action="Delete" asp-route-loanNo="@Model.No">삭제</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+﻿@model SWLoan.Models.RegisterViewModel
+@{
+    ViewData["Title"] = "회원가입";
+}
+<h1>회원가입</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form id="registerForm" method="post" asp-controller="Account" asp-action="Register">
+            <hr />
+            <div class="form-group">
+                <label for="Input_Id">아이디</label>
+                <input class="form-control" type="text" asp-for="Id" />
+                <span class="text-danger" asp-validation-for="Id"></span>
+            </div>
+            <div class="form-group">
+                <label for="Input_Password">비밀번호</label>
+                <input class="form-control" type="password" asp-for="Password" />
+                <span class="text-danger" asp-validation-for="Password"></span>
+            </div>
+            <div class="form-group">
+                <label for="Input_ConfirmPassword">비밀번호 확인</label>
+                <input class="form-control" type="password" asp-for="ConfirmPassword" />
+                <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
+            </div>
+            <div class="form-group">
+                <label for="Input_Id">이름</label>
+                <input class="form-control" type="text" asp-for="Name" />
+                <span class="text-danger" asp-validation-for="Name"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">회원가입</button>
+            <a class="btn btn-light" asp-controller="Home" asp-action="Index">취소</a>
+        </form>
+    </div>
+    
+    @*<div class="col-md-6 col-md-offset-2">
+        <section>
+            <h4>Use another service to register.</h4>
+            <hr />
+            <div>
+                <p>
+                    There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
+                    for details on setting up this ASP.NET application to support logging in via external services.
+                </p>
+            </div>
+        </section>
+    </div>*@
+</div>

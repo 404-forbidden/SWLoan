@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+이 파일은 웹 프로젝트의 게시/패키지 프로세스에서 사용됩니다. 이 MSBuild 파일을 편집하여 이 프로세스의 동작을
+사용자 지정할 수 있습니다. 이에 대한 자세한 내용은 https://go.microsoft.com/fwlink/?LinkID=208121을 참조하세요. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkTCeXvfwEkCiObbnuVn6QAAAAAACAAAAAAAQZgAAAAEAACAAAAA67jEx30iDxtZoamPnQayrtgkwRvQhKa5wmNJ5ZdVznwAAAAAOgAAAAAIAACAAAAD+TO7414eH4JWgmggX9CxU0ccCfmMKxKAQjE+y+5VMq4AAAACzx2PKYIB98kdLOiYIK5ubXaEDoHagNA9zkP4Ff0Y3uQ/QNVk0B8QYUd0VCJlRnALFHQ4r/oKSWkL8TUymKIpN9w6M8aQ3fLvl2z1whWQqPoGZkZdeXJ5e4edf8ErdPh0uYpZ2cijm46z7ZyYB2+ClQP1fL0PRa523fPUyQocf6UAAAABV3NDdoHmZP3UcjYiHqK7gdiOopcK17EOJCGUM8gGcYm3MZVZ65ZZeEYddybBEAkczdJzTI5DIxJ7qr9VmVfyc</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:swloandbserver.database.windows.net,1433%3bInitial Catalog=SWLoan_db%3bUser Id=SW%40swloandbserver%3bPassword=#include32</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="SWLoan.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:swloandbserver.database.windows.net,1433%3bInitial Catalog=SWLoan_db%3bUser Id=SW%40swloandbserver%3bPassword=#include32</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
