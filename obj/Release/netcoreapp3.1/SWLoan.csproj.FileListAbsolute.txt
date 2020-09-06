@@ -84,3 +84,4 @@ C:\Users\root\source\repos\SWLoan\SWLoan\bin\Release\netcoreapp3.1\Properties\se
 C:\Users\root\source\repos\SWLoan\SWLoan\bin\Release\netcoreapp3.1\Properties\serviceDependencies.SWLoan20200829122703 - Web Deploy.json
 C:\Users\root\source\repos\SWLoan\SWLoan\bin\Release\netcoreapp3.1\Properties\ServiceDependencies\SWLoan20200829122703 - Web Deploy\mssql1.arm.json
 C:\Users\root\source\repos\SWLoan\SWLoan\bin\Release\netcoreapp3.1\Properties\ServiceDependencies\SWLoan20200829122703 - Web Deploy\profile.arm.json
+C:\Users\root\source\repos\SWLoan\SWLoan\obj\Release\netcoreapp3.1\Razor\Views\Loan\Detail.cshtml.g.cs
