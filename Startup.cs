@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SWLoan.Data;
+using SWLoan.Hubs;
 
 namespace SWLoan
 {
@@ -29,6 +30,7 @@ namespace SWLoan
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddSession();
             services.AddControllersWithViews();
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,6 +60,7 @@ namespace SWLoan
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapHub<ChatHub>("/chathub");
             });
         }
     }

@@ -85,3 +85,5 @@ C:\Users\root\source\repos\SWLoan\SWLoan\bin\Debug\netcoreapp3.1\Properties\serv
 C:\Users\root\source\repos\SWLoan\SWLoan\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\SWLoan20200829122703 - Web Deploy\mssql1.arm.json
 C:\Users\root\source\repos\SWLoan\SWLoan\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\SWLoan20200829122703 - Web Deploy\profile.arm.json
 C:\Users\root\source\repos\SWLoan\SWLoan\obj\Debug\netcoreapp3.1\Razor\Views\Loan\Detail.cshtml.g.cs
+C:\Users\root\source\repos\SWLoan\SWLoan\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\root\source\repos\SWLoan\SWLoan\obj\Debug\netcoreapp3.1\Razor\Views\Chat\Index.cshtml.g.cs
